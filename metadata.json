@@ -1,0 +1,6 @@
+{
+  "name": "FUMÉ - Restaurant Gastronomique",
+  "description": "Expérience culinaire immersive et luxueuse.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --color-brand: #E65C2C; /* Orange FUMÉ */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-neutral-950 text-neutral-50 antialiased overflow-x-hidden;
+}
+
+@keyframes steam-rise {
+  0% { transform: translateY(0) scale(1) translateX(0); opacity: 0; }
+  30% { opacity: 0.6; }
+  100% { transform: translateY(-100px) scale(2) translateX(20px); opacity: 0; }
+}
+
+@keyframes steam-rise-alt {
+  0% { transform: translateY(0) scale(1) translateX(0); opacity: 0; }
+  30% { opacity: 0.5; }
+  100% { transform: translateY(-120px) scale(1.8) translateX(-20px); opacity: 0; }
+}
+
+.animate-steam1 { animation: steam-rise 4s infinite ease-out; }
+.animate-steam2 { animation: steam-rise-alt 5s infinite ease-out 2s; }
+.animate-steam3 { animation: steam-rise 6s infinite ease-out 1s; }
